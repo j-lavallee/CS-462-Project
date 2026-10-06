@@ -1,0 +1,111 @@
+
+---Demo Intro---
+
+Main Character: MC
+Internal Dialogue: ID
+Shopkeeper: S
+
+
+(Pop-up box describing the story so far, at the opening of the demo at the general store)
+
+"All the coins in the town fountain have been stolen! They were supposed to go to a charity! 
+Luckily, you've investigated the fountain and found a clue: some chocolate fingerprints and a candy wrapper from the general store.
+See if you can find out where it came from and look for more clues!"
+  
+---MC-Shopkeeper Intro Conversation Dialogue---
+  
+
+ID: The general store shopkeeper, Mr. S. He looks busy. Well, he looks more worried than working.
+
+MC: "Hello Mr. S!"
+
+S: "HUH? OH! Hi, yes, um, hello. I mean, um, how may I help you? "
+
+MC: "I'm looking for clues! About the fountain coin theft!"
+
+S: "Oh, the fountain? Wait, theft? What theft? . . . OH! Oh yes, the fountain! Terrible news, of course, very terrible. The fountain. Coins. Yep. 
+  Hope someone finds it soon. . . I mean them! The coins! Find them too!"
+
+MC: "Um, exactly! I even found a clue! This candy wrapper!"
+
+S: "Huh, you looking for more candy? Sorry, but I can't clear this isle until I've restocked the shelves. If I could find it already. . ."
+
+MC: "I'm not looking for more candy, I'm looking for who bought this one. I'm trying to investigate!"
+
+S: "Investigate! Yes, thats right, I just need to look harder. Then I can continue!"
+
+ID: It seems like I won't be able to ask Mr. S anything while he's so distracted. If only grownups would take me more seriously! This is a serious investigation!
+
+MC: "Well, What are you looking for Mr. S?"
+
+S: "Oh dear, it's my store receipts! A whole stack of them! I don't know how I misplaced it. . . again!"
+
+MC: "Maybe I can find them for you?" 
+
+S: "Oh, I'm not sure about that. Sensitive information, on receipts! Here, if you would be so kind, could you perhaps help me stock these last few items? 
+  Then I can return to searching without being behind!" 
+
+MC: "Sure, I can do that." 
+
+S: "Thank you! When you're finished you can see me at the counter and I'll get you some candy."
+
+ID: I got the stock items; maybe I can look around the store for more clues while I'm at it!
+
+---Restock Quest---
+
+(During this section, there will be 3 prompts to interact with a shelf to restock, 2 prompts that are red herrimgs, and 2 prompts to interact with clues)
+
+(Using the magnifying glass during this section will display a colored footprint trail winding through the store, one for the shopkeep and another for the thieves.
+they will be )
+
+(Upon interacting with a prompt to restock)
+ID: There! In it's right place!
+
+(Upon interacting with a red herring spot)
+ID: Hmm. . . I don't think there's anything important here. . .
+
+(Upon Interacting with a Clue)
+ID: What's that?
+ID: [Clue Dialogue]
+
+If finished restocking before clues:
+ID: Ok that's done! I should poke around a bit for more clues while I'm here.
+
+If finished clues before restocking:
+ID: I think I've found everything worth investigating, I should finish Mr. S's task.
+
+If finished both:
+ID: I think that's everything! Now to find Mr. S. . . 
+
+---Stealth Section---
+
+(Upon being spotted)
+S:"Hey! Sorry, but you're not supposed to be back here. I'll be out soon, alright?"
+
+(Fade out to teleport outside the employee's only entrance)
+ID: Darn it! I'll have to be sneakier! Like a real detective!
+
+(Upon retrieving the receipt stack)
+
+
+---Clues---
+
+Wet Coin In the Tip Jar:
+ID: Ew, the tip jar is kinda wet. . . Hey wait a minute! One of the coins in here looks really old! I think it's from the fountain!
+The thieves must have bought something here for sure! But why would they leave a coin behind?
+
+
+  
+Scrap Costume Fabric: 
+
+
+Crumpled Up Receipt:
+
+
+Library Page Treasure Map:
+
+
+---Demo Conclusion---
+(After MC is finished speaking with the shopkeep at the counter, pop-up box ending demo appears)
+This concludes our demo! What will you discover in the Library next? 
+  
