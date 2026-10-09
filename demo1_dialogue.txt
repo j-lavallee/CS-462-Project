@@ -23,7 +23,7 @@ S: "HUH? OH! Hi, yes, um, hello. I mean, um, how may I help you? "
 
 MC: "I'm looking for clues! About the fountain coin theft!"
 
-S: "Oh, the fountain? Wait, theft? What theft? . . . OH! Oh yes, the fountain! Terrible news, of course, very terrible. The fountain. Coins. Yep. 
+S: "Oh, the fountain? Wait, theft? What theft? . . . OH! Oh yes, the fountain! Terrible news, um, very terrible. The fountain. Coins. Yep. 
   Hope someone finds it soon. . . I mean them! The coins! Find them too!"
 
 MC: "Um, exactly! I even found a clue! This candy wrapper!"
@@ -32,7 +32,7 @@ S: "Huh, you looking for more candy? Sorry, but I can't clear this isle until I'
 
 MC: "I'm not looking for more candy, I'm looking for who bought this one. I'm trying to investigate!"
 
-S: "Investigate! Yes, thats right, I just need to look harder. Then I can continue!"
+S: "Investigate! Yes, thats right, I just need to, um, look harder. Then I can continue!"
 
 ID: It seems like I won't be able to ask Mr. S anything while he's so distracted. If only grownups would take me more seriously! This is a serious investigation!
 
@@ -53,16 +53,11 @@ ID: I got the stock items; maybe I can look around the store for more clues whil
 
 ---Restock Quest---
 
-(During this section, there will be 3 prompts to interact with a shelf to restock, 2 prompts that are red herrimgs, and 2 prompts to interact with clues)
-
-(Using the magnifying glass during this section will display a colored footprint trail winding through the store, one for the shopkeep and another for the thieves.
-they will be )
-
 (Upon interacting with a prompt to restock)
 ID: There! In it's right place!
 
 (Upon interacting with a red herring spot)
-ID: Hmm. . . I don't think there's anything important here. . .
+ID: Hmm. . . nothing stands out. I don't think there's anything important here. . .
 
 (Upon Interacting with a Clue)
 ID: What's that?
@@ -80,30 +75,58 @@ ID: I think that's everything! Now to find Mr. S. . .
 ---Stealth Section---
 
 (Upon being spotted)
-S:"Hey! Sorry, but you're not supposed to be back here. I'll be out soon, alright?"
+S:"Hey! Sorry, um, but you're not supposed to be back here. I'll be out soon, alright?"
 
 (Fade out to teleport outside the employee's only entrance)
 ID: Darn it! I'll have to be sneakier! Like a real detective!
 
 (Upon retrieving the receipt stack)
-
+ID: Ooh! A stack of papers! Let's see. . . it's got a bunch of numbers on it. . . is the stack of receipts Mr. S was looking for? They were right here this whole time! I'd better return it to him.
 
 ---Clues---
 
 Wet Coin In the Tip Jar:
 ID: Ew, the tip jar is kinda wet. . . Hey wait a minute! One of the coins in here looks really old! I think it's from the fountain!
-The thieves must have bought something here for sure! But why would they leave a coin behind?
+The thief must have bought something here for sure! But why would a stolen coin get left behind?
 
 
-  
 Scrap Costume Fabric: 
-
+ID: Weird, there's a large piece of cloth left here. It looks like a cape or something? Not sure if it's important now, but I'd better mark it as a clue just in case. 
 
 Crumpled Up Receipt:
+ID: The top receipt is a little wrinkled, and is stained with chocolate. Let's see. . . two pairs of black gloves and hats? A flashlight? AND some candy bars? 
+This looks like something the theif would have bought! Or, no! There's more than one thief! 
 
+ID: Wait a minute! There's something else here!
 
 Library Page Treasure Map:
+ID: It looks like someone drew a map? And at the end is a pile of coins! This must have been used to plan the theft.
 
+ID: There's also a mark here. This paper is from the library? . . . Of course! That's where the thieves must have planned the coin theft. I need to go there and investigate immediately!
+
+---MC-Shopkeep Receipt Return Conversation---
+MC: Mr. S! I have something to tell you!
+
+S: Oh! Um, you finished restocking those shelves already? Thank you!
+
+MC: No that's not it! I mean, yes I finished the shelves, but there's something else!
+
+S: Oh right you wanted candy, I have some right here--
+
+MC: I FOUND IT! 
+
+S: Huh? Found what?
+
+MC: YOUR RECEIPTS!
+
+S: Goodness, there's no need to shout-- wait, you actually found them!? Thank you, oh thank you! I'm so relieved! Here, um, you've definitely earned this now!
+*Gives candy* (just some flavor text)
+
+MC: Thank you! I'm off to look for more clues now. Bye!
+
+S: Take care! Good luck on the, um, investigation!
+
+ID: Huh, maybe he did remember what I was saying. . . Anyways, I'm off!
 
 ---Demo Conclusion---
 (After MC is finished speaking with the shopkeep at the counter, pop-up box ending demo appears)
