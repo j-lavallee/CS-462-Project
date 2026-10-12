@@ -9,13 +9,21 @@ public class ObjectiveTracker : MonoBehaviour
     public DialogueLine[] restockFirstLines;
     public DialogueLine[] cluesFirstLines;
     public DialogueLine[] bothDoneLines;
+    public DialogueLine[] talkToShopkeeperLines; // clues done before the quest started
 
     public UnityEvent onAllRestocked;
     public UnityEvent onAllCluesFound;
-    public UnityEvent onAllDone;   // later: the shopkeeper counter conversation hooks in here
+    public UnityEvent onAllDone;
 
+    public bool questStarted;
     public int restocked;
     public int cluesFound;
+
+    // The shopkeeper's intro conversation calls this when it finishes
+    public void StartQuest()
+    {
+        questStarted = true;
+    }
 
     public void RestockDone()
     {
@@ -33,7 +41,8 @@ public class ObjectiveTracker : MonoBehaviour
         if (cluesFound != clueTarget) return;
 
         onAllCluesFound.Invoke();
-        if (restocked >= restockTarget) Finish();
+        if (!questStarted) Say(talkToShopkeeperLines);
+        else if (restocked >= restockTarget) Finish();
         else Say(cluesFirstLines);
     }
 
