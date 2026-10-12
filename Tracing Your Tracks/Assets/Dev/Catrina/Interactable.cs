@@ -33,7 +33,9 @@ public class Interactable : MonoBehaviour
         SetVisuals(inShow, inInteract);
 
         var kb = Keyboard.current;
-        if (inInteract && kb != null && kb.eKey.wasPressedThisFrame)
+        bool talking = DialogueManager.Instance != null && DialogueManager.Instance.IsBusy;
+        if (!talking && inInteract && kb != null && kb.eKey.wasPressedThisFrame)
+        
         {
             Debug.Log("Interacted with " + name);
             onInteract.Invoke();
