@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Scrap_Fabric
   m_EditorClassIdentifier: Assembly-CSharp::ClueData
   clueTitle: Scrap Costume Fabric
-  description: A large scrap of cloth, maybe from a cape.
+  description: A large scrap of cloth, maybe from a cape. Found caught on a shelf
+    corner in the General Store
   icon: {fileID: 0}
