@@ -27,7 +27,15 @@ public class DialogueManager : MonoBehaviour
     int closedFrame = -1;
 
     // True while talking, plus the frame it closes, so that E press doesn't re-trigger an Interactable
-    public bool IsBusy => open || Time.frameCount == closedFrame;
+    bool locked;
+
+    public bool IsBusy => open || locked || Time.frameCount == closedFrame;
+
+    public void SetLocked(bool value)
+    {
+        locked = value;
+        if (!value) closedFrame = Time.frameCount;
+    }
 
     void Awake()
     {
