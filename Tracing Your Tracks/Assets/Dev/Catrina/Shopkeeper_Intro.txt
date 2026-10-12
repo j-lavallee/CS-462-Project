@@ -1,17 +1,17 @@
 *Thinking*: The general store shopkeeper, Mr. S. He looks busy. Well, he looks more worried than working.
-MC: Hello Mr. S!
-S: HUH? OH! Hi, yes, um, hello. I mean, um, how may I help you?
-MC: I'm looking for clues! About the fountain coin theft!
-S: Oh, the fountain? Wait, theft? What theft? . . . OH! Oh yes, the fountain! Terrible news, um, very terrible. The fountain. Coins. Yep. Hope someone finds it soon. . . I mean them! The coins! Find them too!
-MC: Um, exactly! I even found a clue! This candy wrapper!
-S: Huh, you looking for more candy? Sorry, but I can't clear this aisle until I've restocked the shelves. If I could find it already. . .
-MC: I'm not looking for more candy, I'm looking for who bought this one. I'm trying to investigate!
-S: Investigate! Yes, that's right, I just need to, um, look harder. Then I can continue!
+Raccoon: Hello Mr. S!
+Squirrel: HUH? OH! Hi, yes, um, hello. I mean, um, how may I help you?
+Raccoon: I'm looking for clues! About the fountain coin theft!
+Squirrel: Oh, the fountain? Wait, theft? What theft? . . . OH! Oh yes, the fountain! Terrible news, um, very terrible. The fountain. Coins. Yep. Hope someone finds it soon. . . I mean them! The coins! Find them too!
+Raccoon: Um, exactly! I even found a clue! This candy wrapper!
+Squirrel: Huh, you looking for more candy? Sorry, but I can't clear this aisle until I've restocked the shelves. If I could find it already. . .
+Raccoon: I'm not looking for more candy, I'm looking for who bought this one. I'm trying to investigate!
+Squirrel: Investigate! Yes, that's right, I just need to, um, look harder. Then I can continue!
 *Thinking*: It seems like I won't be able to ask Mr. S anything while he's so distracted. If only grownups would take me more seriously! This is a serious investigation!
-MC: Well, What are you looking for Mr. S?
-S: Oh dear, it's my store receipts! A whole stack of them! I don't know how I misplaced it. . . again!
-MC: Maybe I can find it for you?
-S: Oh, I'm not sure about that. Sensitive information, on receipts! Here, if you would be so kind, could you perhaps help me stock these last few items? Then I can return to searching without being behind!
-MC: Sure, I can do that.
-S: Thank you! When you're finished you can see me at the counter and I'll get you some candy.
+Raccoon: Well, What are you looking for Mr. S?
+Squirrel: Oh dear, it's my store receipts! A whole stack of them! I don't know how I misplaced it. . . again!
+Raccoon: Maybe I can find it for you?
+Squirrel: Oh, I'm not sure about that. Sensitive information, on receipts! Here, if you would be so kind, could you perhaps help me stock these last few items? Then I can return to searching without being behind!
+Raccoon: Sure, I can do that.
+Squirrel: Thank you! When you're finished you can see me at the counter and I'll get you some candy.
 *Thinking*: I got the stock items; maybe I can look around the store for more clues while I'm at it!
