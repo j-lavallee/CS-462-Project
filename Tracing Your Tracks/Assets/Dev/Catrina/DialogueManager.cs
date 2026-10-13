@@ -57,6 +57,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
+        StarterAssets.PlayerFreeze.Frozen = IsBusy;
         if (!open) return;
         var kb = Keyboard.current;
         if (kb == null) return;
@@ -67,6 +68,11 @@ public class DialogueManager : MonoBehaviour
             if (index >= lines.Length) End();
             else ShowLine();
         }
+    }
+
+    void OnDestroy()
+    {
+        StarterAssets.PlayerFreeze.Frozen = false;
     }
 
     void ShowLine()

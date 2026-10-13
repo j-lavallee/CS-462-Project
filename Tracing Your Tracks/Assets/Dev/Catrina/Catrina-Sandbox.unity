@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 403864181}
   m_Layer: 0
   m_Name: TestPlayer
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1374,10 +1374,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!4 &491091940 stripped
 Transform:
@@ -1592,10 +1589,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!4 &1118920993 stripped
 Transform:
@@ -1839,10 +1833,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!1 &1354290532
 GameObject:
