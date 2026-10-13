@@ -8,7 +8,8 @@ public class SearchSpot : MonoBehaviour
     public SpotType type;
     public DialogueLine[] lines;        // plays the first time
     public DialogueLine[] repeatLines;  // plays after it's been used for the first time
-    public ClueData clue;               // only used by Clue spots
+    public ClueData clue;
+    public AudioClip firstSearchSound;               // only used by Clue spots
     public UnityEvent onFirstSearch;    // the objective tracker will connect here later
 
     bool used;

@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 403864181}
   m_Layer: 0
   m_Name: TestPlayer
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1328,6 +1328,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: firstSearchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bdd20a7aa3aafb4397092a7090e7383, type: 3}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: lines.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1370,10 +1374,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!4 &491091940 stripped
 Transform:
@@ -1518,6 +1519,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: firstSearchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bdd20a7aa3aafb4397092a7090e7383, type: 3}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: lines.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1538,11 +1543,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 412550204}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bdd20a7aa3aafb4397092a7090e7383, type: 3}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
@@ -1550,20 +1567,29 @@ PrefabInstance:
       value: RestockDone
       objectReference: {fileID: 0}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ObjectiveTracker, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ObjectiveTracker, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!4 &1118920993 stripped
 Transform:
@@ -1761,6 +1787,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: firstSearchSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9bdd20a7aa3aafb4397092a7090e7383, type: 3}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: lines.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1803,10 +1833,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!1 &1354290532
 GameObject:
@@ -1849,6 +1876,7 @@ MonoBehaviour:
     See
     if you can find out where it came from and look for more clues!'
   endTitle: Demo Complete
+  endSound: {fileID: 8300000, guid: c4f3a8945d89ab14bbe853fc1a6fb8f3, type: 3}
   endText: This concludes our demo! What will you discover in the Library next?
   onIntroClosed:
     m_PersistentCalls:
@@ -2222,6 +2250,152 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: 660, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1592164506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1592164509}
+  - component: {fileID: 1592164508}
+  - component: {fileID: 1592164507}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1592164507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592164506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b9e5b03062db844a71a8c96b0c7b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  sfxVolume: 1
+  dialogueAdvance: {fileID: 0}
+  stealthOpen: {fileID: 0}
+  spotted: {fileID: 0}
+--- !u!82 &1592164508
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592164506}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1592164509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592164506}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.9181, y: 0, z: 0.3045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661788403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,3 +3842,4 @@ SceneRoots:
   - {fileID: 370260099}
   - {fileID: 290651703}
   - {fileID: 87674916}
+  - {fileID: 1592164509}

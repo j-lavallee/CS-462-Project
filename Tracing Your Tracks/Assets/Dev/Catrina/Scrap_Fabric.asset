@@ -16,3 +16,4 @@ MonoBehaviour:
   description: A large scrap of cloth, maybe from a cape. Found caught on a shelf
     corner in the General Store
   icon: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 0cb4f60d7759f79488db644bbdde060d, type: 3}
