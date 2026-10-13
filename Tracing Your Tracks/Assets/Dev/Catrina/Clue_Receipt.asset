@@ -16,3 +16,4 @@ MonoBehaviour:
   description: A chocolate-stained receipt listing black gloves and hats, a flashlight,
     and candy. Found with Mr. S's stack of receipts in the storeroom.
   icon: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 69b2882c295777044adadee3a3359de4, type: 3}

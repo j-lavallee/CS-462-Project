@@ -15,3 +15,4 @@ MonoBehaviour:
   clueTitle: Wet Coin
   description: 'A damp, well-worn coin. Found in the General Store''s tip jar. '
   icon: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: 1fdb6cb6212e2a84c8c94344978bf52d, type: 3}

@@ -10,6 +10,7 @@ public class DemoFlow : MonoBehaviour
         "See if you can find out where it came from and look for more clues!";
 
     public string endTitle = "Demo Complete";
+    public AudioClip endSound;
     [TextArea(2, 6)] public string endText =
         "This concludes our demo! What will you discover in the Library next?";
 
@@ -29,6 +30,7 @@ public class DemoFlow : MonoBehaviour
 
     public void ShowEnd()
     {
+        AudioManager.Play(endSound);
         if (StoryPopup.Instance == null) { Debug.LogWarning("No StoryPopup in scene"); return; }
         StoryPopup.Instance.Show(endTitle, endText, onDemoEnd);
     }

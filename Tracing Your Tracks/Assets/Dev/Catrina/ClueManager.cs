@@ -32,6 +32,7 @@ public class ClueManager : MonoBehaviour
         }
 
         collected.Add(clue);
+        AudioManager.Play(clue.pickupSound);
         ShowPopup("Clue found: " + clue.clueTitle, clue.description);
     }
 
