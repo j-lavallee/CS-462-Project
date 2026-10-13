@@ -91,6 +91,7 @@ public class EnemyController : MonoBehaviour
 
     private void FollowPlayer()
     {
+        agent.isStopped = false;
         agent.SetDestination(player.position);
     }
 

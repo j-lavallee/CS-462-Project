@@ -7,8 +7,10 @@ public class StealthReset : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-        {
+        {   
+            other.gameObject.GetComponent<CharacterController>().enabled = false;
             other.transform.position = resetPoint.position;
+            other.gameObject.GetComponent<CharacterController>().enabled = true;
         }
     }
 }
