@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1281809255961490457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5413825054712316369}
+  - component: {fileID: 4620139729422280764}
+  m_Layer: 0
+  m_Name: ObjectiveTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5413825054712316369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281809255961490457}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.51294, y: 0, z: -0.98708}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4620139729422280764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281809255961490457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13911aa79e874549b56907e61450b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectiveTracker
+  restockTarget: 3
+  clueTarget: 2
+  restockFirstLines:
+  - speaker: '*Thinking*'
+    text: Ok that's done! I should poke around a bit for more clues while I'm here.
+  cluesFirstLines:
+  - speaker: '*Thinking*'
+    text: I think I've found everything worth investigating, I should finish Mr.
+      S's task.
+  bothDoneLines:
+  - speaker: '*Thinking*'
+    text: I think that's everything! Now to find Mr. S. . .
+  talkToShopkeeperLines:
+  - speaker: '*Thinking*'
+    text: I think I've found everything worth investigating here. I should go talk
+      to Mr. S and see if he can tell me about the candy wrapper I found.
+  onAllRestocked:
+    m_PersistentCalls:
+      m_Calls: []
+  onAllCluesFound:
+    m_PersistentCalls:
+      m_Calls: []
+  onAllDone:
+    m_PersistentCalls:
+      m_Calls: []
+  questStarted: 0
+  restocked: 0
+  cluesFound: 0
