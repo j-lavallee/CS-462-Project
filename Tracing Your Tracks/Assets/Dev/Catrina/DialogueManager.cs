@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     // True while talking, plus the frame it closes, so that E press doesn't re-trigger an Interactable
     bool locked;
 
-    public bool IsBusy => open || locked || Time.frameCount == closedFrame;
+    public bool IsBusy => open || locked || Time.frameCount == closedFrame || PauseMenu.IsPaused;
 
     public void SetLocked(bool value)
     {
@@ -58,7 +58,7 @@ public class DialogueManager : MonoBehaviour
     void Update()
     {
         StarterAssets.PlayerFreeze.Frozen = IsBusy;
-        if (!open) return;
+        if (!open || PauseMenu.IsPaused) return;
         var kb = Keyboard.current;
         if (kb == null) return;
 

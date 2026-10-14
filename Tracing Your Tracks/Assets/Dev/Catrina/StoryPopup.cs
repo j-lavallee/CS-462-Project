@@ -35,7 +35,7 @@ public class StoryPopup : MonoBehaviour
 
     void Update()
     {
-        if (!open) return;
+        if (!open || PauseMenu.IsPaused) return;
         var kb = Keyboard.current;
         if (kb != null && kb.eKey.wasPressedThisFrame && Time.frameCount != shownFrame)
             Close();
