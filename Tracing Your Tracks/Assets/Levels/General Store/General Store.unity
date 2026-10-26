@@ -2087,6 +2087,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1655606603}
     - target: {fileID: 4230709774375770751, guid: 3610e3c4396a15041b63dd36434b6902, type: 3}
+      propertyPath: hintPanel
+      value: 
+      objectReference: {fileID: 2087266916}
+    - target: {fileID: 4230709774375770751, guid: 3610e3c4396a15041b63dd36434b6902, type: 3}
       propertyPath: speakerText
       value: 
       objectReference: {fileID: 1655606604}
@@ -6421,6 +6425,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d531c83e45d721439440ca8675f61c3, type: 3}
+--- !u!1 &2087266916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7199377378626753004, guid: 48ccdfa3d70285a4fa68b21152651afb, type: 3}
+  m_PrefabInstance: {fileID: 9061966194203006578}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2099389591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 974238578668270704, guid: c708a3b79cd542b42bbfedb17e213bc1, type: 3}

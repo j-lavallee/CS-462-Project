@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text speakerText;
     public TMP_Text bodyText;
 
+    public GameObject hintPanel;
+
     DialogueLine[] lines;
     int index;
     UnityEvent onFinished;
@@ -52,6 +54,8 @@ public class DialogueManager : MonoBehaviour
         open = true;
         startedFrame = Time.frameCount;
         panel.SetActive(true);
+        if (hintPanel != null)
+            hintPanel.SetActive(false);
         ShowLine();
     }
 
@@ -86,6 +90,8 @@ public class DialogueManager : MonoBehaviour
         open = false;
         closedFrame = Time.frameCount;
         panel.SetActive(false);
+        if (hintPanel != null)
+            hintPanel.SetActive(true);
         if (onFinished != null) onFinished.Invoke();
     }
 }
