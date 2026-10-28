@@ -15,6 +15,46 @@ SETS = flags changed when it finishes
 IF / ELSE = variants chosen by flag state
 
 
+
+----Town Square Opening Sequence Section-------
+•	NEW_GAME_STARTED: New Game started.
+•	NEWSPAPER_SEEN: newspaper cutscene finished (or skipped).
+•	INTRO_LINE_DONE: MC’s opening line finished.
+•	SQUARE_CONTROL_GIVEN: third-person control enabled.
+Points of interest
+•	FOUNTAIN_INSPECTED, 
+•	CLUE_WRAPPER_FOUND: wrapper collected and clue dialogue finished.
+•	CLUES_FOUND (0–1): increments with the wrapper.
+Exits
+•	STORE_PATH_UNLOCKED: set with the wrapper clue.
+•	LIBRARY_PATH_UNLOCKED, SCHOOL_PATH_UNLOCKED, PARK_PATH_UNLOCKED: all false in this sequence. Set by later sections’ end flags.
+
+Objective HUD Text:
+1.	Investigate the fountain, shown when SQUARE_CONTROL_GIVEN, until CLUE_WRAPPER_FOUND
+2.	Follow the clue to the general store, shown when CLUE_WRAPPER_FOUND	
+
+New Game (upon starting game for demos):
+SETS: NEW_GAME_STARTED. Starts Newspaper cutscene. 
+
+Newspaper cutscene (continues with e):
+Newspaper fills the screen
+Dialogue box over newspaper: MC: “Finally! A real mystery! I can show everyone I can be a real detective now!” (SETS: NEWSPAPER_SEEN)
+Transition to MC at town square reading newspaper: ID: I’m here! Time to start investigating! (SETS: INTRO_LINE_DONE)
+Camera shifts to third person camera and control is given to the player: prompt to investigate the fountain (SETS: SQUARE_CONTROL_GIVEN)
+
+ Clue Candy Wrapper:
+Upon inspecting the wrapper
+ID: 
+SETS: CLUE_WRAPPER_FOUND, CLUES_FOUND = 1, STORE_PATH_UNLOCKED
+
+Paths/Exits:
+Until unlocked in story, no reason to go there and will be inaccessible. 
+
+-----End Town Square Section-----
+
+
+
+---Library Sequence Section-----
 Flag References:
 Entry and NPC
 LIB_ENTERED: player crosses the entrance trigger (plays once).
@@ -216,3 +256,5 @@ Finish all jobs and sign swap before any clues
 Make the jigsaw the third clue, then the history book, then the picture book 
 Third clue triggers while Miss Teal’s dialogue is open: confirm the deduction is queued.
 Talk to Miss Teal in every state
+
+---End Library Section----
