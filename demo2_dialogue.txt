@@ -1,8 +1,8 @@
 
 Demo 2 Dialogue File
-CURRENTLY COMPLETE – SEQUENCE, FLAGS, TRIGGERS LIBRARY SECTION
-TODO – SEQUENCE, FLAGS, TRIGGERS TOWN SQUARE INTRO
-TODO - DIALOGUE SCRIPT WRITING LIBRARY; TOWN SQUARE INTRO 
+CURRENTLY COMPLETE – SEQUENCE, FLAGS, TRIGGERS LIBRARY SECTION, TOWN SQUARE INTRO SECTION
+TODO - DIALOGUE SCRIPT WRITING LIBRARY; TOWN SQUARE INTRO
+
 File Info:
 Speakers:
 Main Character: MC
@@ -119,19 +119,47 @@ Objective HUD Text – a hint in the pause menu on what to do next, or if have t
 Scripts and Triggers:
 Global Lines:
 GLOBAL-1: Lock any interactable while TEAL_MET is false
-ID: 
+ID: . . . I should ask the Librarian about my clue first.
 GLOBAL-2: Nothing here, already checked line
-ID: 
+ID: I've already checked this spot. 
 Arrival (Scene 1):
 Upon entering Library section
 POP-UP reminder that the treasure map end page came from the library, MC wants to ask the librarian who checked out the book it came from
+POP-UP: That map you found was drawn on a library book end page. Let's find out who checked out the book, and look for more clues!
 
 Intro Conversation (Scene 2):
 Upon interacting with Miss Teal at the front desk, TEAL_MET false
-ID: 
-MC:
-T: 
+ID: Miss Cockatiel, the librarian. She's perched very, very still behind the desk. 
+MC: "Hi Miss Teal!"
+T: "HI!! WELCOME TO THE LIB- SHH! Sorry, sorry. I mean, *quieter* welcome to the library."
+MC: ". . . I didn't say anything loud yet"
+T: "That was for me! A proper librarian is very quiet, you know. I'm . . . working on it."
+MC: "That's ok! I'm a proper detective! I'm investigating the fountain coin theft."
+T: "A DETECTIVE!? HOW EXCITING! Oh, shh, shh, sorry!"
+T: "Oh, but that would make a wonderful story if you solved it! Do you have any clues?"
+MC: "This! It's a map leading to treasure, but look at the corner."
+(shows the map page clue)
+T: "Hmm. That's our library stamp! Torn right off an endpage. Oh my poor books! A TRAVESTY! -sorry. I can't tell which one, though. This stamp is an older kind used years ago."
+T: "OH! But you followed the lead here! This could be important to your detective work! You're very clever."
+
+ID: She believes me! I CAN prove I'm a real detective!
+
+MC: "Thank you! . . . but you really can't tell me who could have used this?"
+T: "I wish I could, dear. But it's been a tricky few days, Autumn Story Hour is tomorrow, and I'm so behind! Not like a proper librarian at all! Shh, sorry."
+(She glances sadly at her QUIET PLEASE sign on her desk)
+
+T: "There are a couple of books misplaced, and the book return belt is jammed again. I love the thing; it's the newest addition to the library from the fountain charity collection two years ago, but goodness! It gets stuck ALL the TIME! shh, sorry."
+T: "Here, could I ask you a big favor? I'm trying really hard to practice being a good librarian, but I just can't get it right! If you would be so kind, could you help me set up for Autumn Story hour? In return, you have free reign to explore the library for your detective work."
+
+MC: "Sure! What do you need?"
+T: "Wonderful! Shh, wonderful, quietly. I need the banner on the notice board put up, and the cushions arranged in the children's corner. And if you find those misplaced books, please let me know!"
+
+MC: "On it! shh, I mean, quietly."
+ID: Ok, banner, cushions, missing books. Plenty of chances to look around!
+
 SETS: TEAL_MET, MAP_SHOWN. All library interactables unlock
+
+
 
 Talking to Miss Teal Again – Select Which Conversation Plays:
 TEAL_MET false -> plays Intro 
