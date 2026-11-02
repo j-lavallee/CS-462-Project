@@ -2457,7 +2457,7 @@ MonoBehaviour:
   panel: {fileID: 1367453901}
   speakerText: {fileID: 141459380}
   bodyText: {fileID: 264196552}
-  hintPanel: {fileID: 0}
+  charsPerSecond: 40
 --- !u!4 &1207918318
 Transform:
   m_ObjectHideFlags: 0
