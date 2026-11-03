@@ -5,6 +5,10 @@ public class DialogueTrigger : MonoBehaviour
 {
     public DialogueLine[] lines;
     public UnityEvent onFinished;
+    public DialoguePriority priority = DialoguePriority.Clue;
+
+    [ContextMenu("Test: Play")]
+    void TestPlay() { Play(); }
 
     public void Play()
     {
@@ -13,6 +17,6 @@ public class DialogueTrigger : MonoBehaviour
             Debug.LogWarning("No DialogueManager in scene");
             return;
         }
-        DialogueManager.Instance.StartDialogue(lines, onFinished);
+        DialogueManager.Instance.StartDialogue(lines, onFinished, priority);
     }
 }

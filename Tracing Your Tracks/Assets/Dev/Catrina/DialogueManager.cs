@@ -1,14 +1,29 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [Serializable]
 public class DialogueLine
 {
     public string speaker;
     [TextArea(2, 5)] public string text;
+}
+
+// Higher number plays first when several conversations are waiting
+public enum DialoguePriority { Deduction = 0, Clue = 1, Npc = 2 }
+
+[Serializable]
+public class SpeakerStyle
+{
+    public string code;          // main name: MC, ID, S, T
+    public string[] aliases;     // other names that mean the same speaker
+    public string displayName;   // what the name label shows (blank = no label)
+    public Color panelColor = new Color(0.23f, 0.16f, 0.12f, 0.94f);
+    public bool italic;
 }
 
 public class DialogueManager : MonoBehaviour
@@ -18,9 +33,24 @@ public class DialogueManager : MonoBehaviour
     public GameObject panel;
     public TMP_Text speakerText;
     public TMP_Text bodyText;
+    public GameObject hintPanel;
 
     [Tooltip("Characters revealed per second")]
-    public float charsPerSecond = 40f;
+    public float charsPerSecond = 35f;
+
+    [Header("Speaker styles (leave empty to use the built-in defaults)")]
+    public List<SpeakerStyle> styles = new List<SpeakerStyle>();
+    public Color defaultPanelColor = new Color(0.23f, 0.16f, 0.12f, 0.94f);
+
+    class Pending
+    {
+        public DialogueLine[] lines;
+        public UnityEvent finished;
+        public DialoguePriority priority;
+    }
+
+    List<Pending> queue = new List<Pending>();
+    Image panelImage;
 
     DialogueLine[] lines;
     int index;
@@ -33,19 +63,28 @@ public class DialogueManager : MonoBehaviour
     int startedFrame = -1;
     int closedFrame = -1;
 
-    // True while talking, plus the frame it closes, so that E press doesn't re-trigger an Interactable
     public bool IsBusy => open || locked || Time.frameCount == closedFrame || PauseMenu.IsPaused;
 
+    void RefreshHint()
+    {
+        if (hintPanel != null) hintPanel.SetActive(!open && !locked);
+    }
     public void SetLocked(bool value)
     {
         locked = value;
         if (!value) closedFrame = Time.frameCount;
+        RefreshHint();
     }
 
     void Awake()
     {
         Instance = this;
-        if (panel != null) panel.SetActive(false);
+        if (panel != null)
+        {
+            panelImage = panel.GetComponent<Image>();
+            panel.SetActive(false);
+        }
+        if (styles == null || styles.Count == 0) styles = DefaultStyles();
     }
 
     void OnDestroy()
@@ -53,9 +92,63 @@ public class DialogueManager : MonoBehaviour
         StarterAssets.PlayerFreeze.Frozen = false;
     }
 
-    public void StartDialogue(DialogueLine[] newLines, UnityEvent finished)
+    static Color Hex(string h)
     {
-        if (open || newLines == null || newLines.Length == 0) return;
+        ColorUtility.TryParseHtmlString(h, out Color c);
+        return c;
+    }
+
+    static List<SpeakerStyle> DefaultStyles()
+    {
+        return new List<SpeakerStyle>
+        {
+            new SpeakerStyle { code = "MC", aliases = new[] { "Raccoon" },
+                            displayName = "MC", panelColor = Hex("#8E4B63EE") },
+            new SpeakerStyle { code = "ID", aliases = new[] { "Internal" },
+                            displayName = "", panelColor = Hex("#2F3A4AEE"), italic = true },
+            new SpeakerStyle { code = "S",  aliases = new[] { "Mr. S", "Squirrel", "Mr. Squirrel", "Shopkeeper" },
+                            displayName = "Mr. S", panelColor = Hex("#4F6B3AEE") },
+            new SpeakerStyle { code = "T",  aliases = new[] { "Teal", "Miss Teal", "Cockatiel", "Librarian" },
+                            displayName = "Miss Teal", panelColor = Hex("#3F6F8FEE") },
+        };
+    }
+
+    SpeakerStyle FindStyle(string speaker)
+    {
+        if (string.IsNullOrWhiteSpace(speaker)) return null;
+        speaker = speaker.Trim();
+
+        foreach (var s in styles)
+        {
+            if (Matches(s.code, speaker)) return s;
+            if (s.aliases == null) continue;
+            foreach (var alias in s.aliases)
+                if (Matches(alias, speaker)) return s;
+        }
+        return null;
+    }
+
+    static bool Matches(string a, string b)
+    {
+        return string.Equals(a == null ? null : a.Trim(), b, StringComparison.OrdinalIgnoreCase);
+    }
+
+    // If another conversation is open, this one waits in line instead of being dropped.
+    public void StartDialogue(DialogueLine[] newLines, UnityEvent finished,
+                              DialoguePriority priority = DialoguePriority.Clue)
+    {
+        if (newLines == null || newLines.Length == 0) return;
+
+        if (open)
+        {
+            queue.Add(new Pending { lines = newLines, finished = finished, priority = priority });
+            return;
+        }
+        Begin(newLines, finished);
+    }
+
+    void Begin(DialogueLine[] newLines, UnityEvent finished)
+    {
         lines = newLines;
         onFinished = finished;
         index = 0;
@@ -63,6 +156,7 @@ public class DialogueManager : MonoBehaviour
         startedFrame = Time.frameCount;
         panel.SetActive(true);
         ShowLine();
+        RefreshHint();
     }
 
     void Update()
@@ -85,7 +179,6 @@ public class DialogueManager : MonoBehaviour
         {
             if (scrolling)
             {
-                // First press while typing: fill in the rest of the line
                 FinishScrolling();
             }
             else
@@ -100,8 +193,14 @@ public class DialogueManager : MonoBehaviour
 
     void ShowLine()
     {
-        speakerText.text = lines[index].speaker;
-        bodyText.text = lines[index].text;
+        var line = lines[index];
+        var style = FindStyle(line.speaker);
+
+        speakerText.text = style != null ? style.displayName : line.speaker;
+        if (panelImage != null) panelImage.color = style != null ? style.panelColor : defaultPanelColor;
+        bodyText.fontStyle = (style != null && style.italic) ? FontStyles.Italic : FontStyles.Normal;
+
+        bodyText.text = line.text;
         bodyText.ForceMeshUpdate();
         totalChars = bodyText.textInfo.characterCount;
         revealed = 0f;
@@ -122,6 +221,25 @@ public class DialogueManager : MonoBehaviour
         scrolling = false;
         closedFrame = Time.frameCount;
         panel.SetActive(false);
+
         if (onFinished != null) onFinished.Invoke();
+
+        // If that event didn't start something new, play the next waiting conversation
+        if (!open) PlayNextQueued();
+        
+        RefreshHint();
+    }
+
+    void PlayNextQueued()
+    {
+        if (queue.Count == 0) return;
+
+        int best = 0;
+        for (int i = 1; i < queue.Count; i++)
+            if (queue[i].priority > queue[best].priority) best = i;
+
+        var next = queue[best];
+        queue.RemoveAt(best);
+        Begin(next.lines, next.finished);
     }
 }

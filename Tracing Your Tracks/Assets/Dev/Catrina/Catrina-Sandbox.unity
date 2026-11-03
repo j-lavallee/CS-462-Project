@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 403864181}
   m_Layer: 0
   m_Name: TestPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1691,6 +1691,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
   m_PrefabInstance: {fileID: 693250473}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &499017472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499017473}
+  - component: {fileID: 499017474}
+  m_Layer: 0
+  m_Name: QTest_Npc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499017473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499017472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130737067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499017474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499017472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076a2c971b02ee4498a4321684c6338f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  lines:
+  - speaker: T
+    text: 'NPC: I should play first'
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  priority: 2
 --- !u!1 &508063840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +1952,57 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
+--- !u!1 &873453099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 873453100}
+  - component: {fileID: 873453101}
+  m_Layer: 0
+  m_Name: QTest_Clue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &873453100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873453099}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130737067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &873453101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873453099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076a2c971b02ee4498a4321684c6338f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  lines:
+  - speaker: MC
+    text: 'Clue: I should play second'
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  priority: 1
 --- !u!1 &906047308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,6 +2208,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
   m_PrefabInstance: {fileID: 445326818}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1130737066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1130737067}
+  m_Layer: 0
+  m_Name: QueueTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1130737067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130737066}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.66582, y: -0, z: -0.76277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1307302515}
+  - {fileID: 873453100}
+  - {fileID: 499017473}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1130970967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,7 +2593,10 @@ MonoBehaviour:
   panel: {fileID: 1367453901}
   speakerText: {fileID: 141459380}
   bodyText: {fileID: 264196552}
+  hintPanel: {fileID: 1338706613}
   charsPerSecond: 40
+  styles: []
+  defaultPanelColor: {r: 0.23, g: 0.16, b: 0.12, a: 0.94}
 --- !u!4 &1207918318
 Transform:
   m_ObjectHideFlags: 0
@@ -2478,6 +2617,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
   m_PrefabInstance: {fileID: 1345180320}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1307302514
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1307302515}
+  - component: {fileID: 1307302516}
+  m_Layer: 0
+  m_Name: QTest_Deduction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1307302515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307302514}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1130737067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1307302516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307302514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076a2c971b02ee4498a4321684c6338f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  lines:
+  - speaker: ID
+    text: 'Deduction: I should play last'
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  priority: 0
 --- !u!1 &1338706613
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,6 +4122,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  priority: 1
 --- !u!1 &1971914963
 GameObject:
   m_ObjectHideFlags: 0
@@ -5185,3 +5376,4 @@ SceneRoots:
   - {fileID: 275236223}
   - {fileID: 5701498255343039962}
   - {fileID: 1192732240}
+  - {fileID: 1130737067}
