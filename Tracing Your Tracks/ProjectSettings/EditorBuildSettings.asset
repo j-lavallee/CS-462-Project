@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/General Store/General Store.unity
     guid: 324b673ef53e0d04bb25b8a56cf856c0
+  - enabled: 1
+    path: Assets/Levels/Town Square/Town Square.unity
+    guid: 88ac802a1cb09ac4883f106583ab982f
+  - enabled: 1
+    path: Assets/Levels/Library/Library.unity
+    guid: 5ec3fc2d5f5be9e4fa8a582b2be90298
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
