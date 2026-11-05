@@ -15,7 +15,7 @@ public static class DialogueParser
 
             var dl = new DialogueLine();
             int colon = line.IndexOf(':');
-            if (colon > 0 && colon <= 12)
+            if (colon > 0 && colon <= 20)
             {
                 dl.speaker = line.Substring(0, colon).Trim();
                 dl.text = line.Substring(colon + 1).Trim();

@@ -25,7 +25,8 @@ public class ClueManager : MonoBehaviour
     {
         if (clue == null) return;
 
-        if (collected.Contains(clue))
+        string flag = "CLUE_" + clue.name;
+        if (GameState.Has(flag))
         {
             Debug.Log("Already have " + clue.clueTitle);
             return;
@@ -33,12 +34,13 @@ public class ClueManager : MonoBehaviour
 
         collected.Add(clue);
         AudioManager.Play(clue.pickupSound);
-        ShowPopup("Clue found: " + clue.clueTitle, clue.description);
-    }
 
-    public bool HasClue(ClueData clue)
-    {
-        return collected.Contains(clue);
+        GameState.Set(flag);
+        GameState.Add("CLUES_FOUND");
+        if (!string.IsNullOrEmpty(clue.area))
+            GameState.Add("CLUES_" + clue.area.ToUpper());
+
+        ShowPopup("Clue found: " + clue.clueTitle, clue.description);
     }
 
     public void ShowPopup(string title, string body)

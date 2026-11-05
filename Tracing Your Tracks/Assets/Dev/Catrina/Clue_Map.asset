@@ -17,3 +17,4 @@ MonoBehaviour:
     stack of receipts.
   icon: {fileID: 0}
   pickupSound: {fileID: 8300000, guid: feb35d9e24684cf42a2d7415518b710e, type: 3}
+  area: STORE

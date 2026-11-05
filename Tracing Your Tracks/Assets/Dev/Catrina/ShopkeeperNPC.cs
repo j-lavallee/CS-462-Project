@@ -69,6 +69,6 @@ public class ShopkeeperNPC : MonoBehaviour
             done.Invoke();
             return;
         }
-        DialogueManager.Instance.StartDialogue(lines, done);
+        DialogueManager.Instance.StartDialogue(lines, done, DialoguePriority.Npc);
     }
 }

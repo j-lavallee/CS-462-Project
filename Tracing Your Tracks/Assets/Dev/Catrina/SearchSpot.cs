@@ -11,6 +11,7 @@ public class SearchSpot : MonoBehaviour
     public ClueData clue;
     public AudioClip firstSearchSound;               // only used by Clue spots
     public UnityEvent onFirstSearch;    // the objective tracker will connect here later
+    public DialoguePriority priority = DialoguePriority.Clue;
 
     bool used;
 
@@ -57,6 +58,6 @@ public class SearchSpot : MonoBehaviour
             if (done != null) done.Invoke();
             return;
         }
-        DialogueManager.Instance.StartDialogue(toPlay, done);
+        DialogueManager.Instance.StartDialogue(toPlay, done, priority);
     }
 }

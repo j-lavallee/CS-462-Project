@@ -7,4 +7,5 @@ public class ClueData : ScriptableObject
     [TextArea(2, 5)] public string description;
     public Sprite icon;
     public AudioClip pickupSound;
+    public string area;
 }
