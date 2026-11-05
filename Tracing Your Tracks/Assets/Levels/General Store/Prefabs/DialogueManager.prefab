@@ -47,3 +47,4 @@ MonoBehaviour:
   panel: {fileID: 0}
   speakerText: {fileID: 0}
   bodyText: {fileID: 0}
+  charsPerSecond: 35

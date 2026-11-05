@@ -1,0 +1,14 @@
+// Blocks are checked top to bottom. The first one whose REQUIRES pass plays.
+
+[Done]
+REQUIRES: TEST_VISITS>=2
+MC: Third visit and onwards. This block has no SETS, so nothing changes.
+
+[Repeat]
+REQUIRES: TEST_MET
+SETS: TEST_VISITS+1
+MC: Second visit. TEST_VISITS goes up by one.
+
+[First]
+SETS: TEST_MET, TEST_VISITS+1
+MC: First visit. This sets TEST_MET.
