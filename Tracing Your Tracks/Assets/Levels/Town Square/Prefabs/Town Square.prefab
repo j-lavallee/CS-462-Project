@@ -71,6 +71,8 @@ MonoBehaviour:
   prompt: {fileID: 692555008020512732}
   destinationName: General Store
   promptFormat: Press E to go to the {0}
+  requires: []
+  arriveAtSpawn: 
 --- !u!1 &120421741015468002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,6 +3417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4472502762929408469}
+  - component: {fileID: 5209268740040316679}
   m_Layer: 0
   m_Name: Spawn_FromLibrary
   m_TagString: Untagged
@@ -3437,6 +3440,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7472667762841271794}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &5209268740040316679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707322459691286244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13381bb8b8cfe9f4a8de6e16a11a34ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPoint
+  id: 
 --- !u!1 &5868517126565886264
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,6 +3462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3180172811684045089}
+  - component: {fileID: 7870440262384587117}
   m_Layer: 0
   m_Name: Spawn_FromStore
   m_TagString: Untagged
@@ -3468,6 +3485,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7472667762841271794}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7870440262384587117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868517126565886264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13381bb8b8cfe9f4a8de6e16a11a34ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnPoint
+  id: 
 --- !u!1 &6075875043849592573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3815,6 +3845,8 @@ MonoBehaviour:
   prompt: {fileID: 2708953998796435363}
   destinationName: Library
   promptFormat: Press E to go to the {0}
+  requires: []
+  arriveAtSpawn: 
 --- !u!1 &6594646520150860238
 GameObject:
   m_ObjectHideFlags: 0
