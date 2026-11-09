@@ -105,7 +105,7 @@ public class DialogueManager : MonoBehaviour
             new SpeakerStyle { code = "MC", aliases = new[] { "Raccoon" },
                             displayName = "MC", panelColor = Hex("#8E4B63EE") },
             new SpeakerStyle { code = "ID", aliases = new[] { "Internal" },
-                            displayName = "", panelColor = Hex("#2F3A4AEE"), italic = true },
+                            displayName = "*Thinking*", panelColor = Hex("#2F3A4AEE") },
             new SpeakerStyle { code = "S",  aliases = new[] { "Mr. S", "Squirrel", "Mr. Squirrel", "Shopkeeper" },
                             displayName = "Mr. S", panelColor = Hex("#4F6B3AEE") },
             new SpeakerStyle { code = "T",  aliases = new[] { "Teal", "Miss Teal", "Cockatiel", "Librarian" },
