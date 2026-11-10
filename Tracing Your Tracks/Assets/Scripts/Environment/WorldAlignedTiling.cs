@@ -89,7 +89,7 @@ public class WorldAlignedTiling : MonoBehaviour
         }
     }
 
-    // For one texture coordinate (0 = U, 1 = V), returns (tiling, offset).
+    // For one texture coordinate (0 = U, 1 = V), returns tiling, offset.
     Vector2 Channel(int ch, int a, int alongX, int alongZ, Vector3[] verts, Vector2[] uvs)
     {
         // Which edge does this coordinate change along?
