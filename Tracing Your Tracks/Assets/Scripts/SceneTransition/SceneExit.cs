@@ -3,8 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-// While the player is inside the trigger, the prompt shows.
-// Pressing E loads the destination scene.
+// Pressing E loads the scene
 [RequireComponent(typeof(Collider))]
 public class SceneExit : MonoBehaviour
 {
@@ -12,6 +11,10 @@ public class SceneExit : MonoBehaviour
     public GameObject prompt;
     public string destinationName;
     public string promptFormat = "Press E to go to the {0}";
+
+    public string[] requires;
+
+    public string arriveAtSpawn;
 
     bool playerInside;
 
@@ -40,7 +43,7 @@ public class SceneExit : MonoBehaviour
     {
         bool busy = PauseMenu.IsPaused ||
                     (DialogueManager.Instance != null && DialogueManager.Instance.IsBusy);
-        bool canLeave = playerInside && !busy;
+        bool canLeave = playerInside && !busy && GameState.CheckAll(requires);
 
         if (prompt != null)
         {
@@ -52,7 +55,7 @@ public class SceneExit : MonoBehaviour
         var kb = Keyboard.current;
         if (canLeave && kb != null && kb.eKey.wasPressedThisFrame)
         {
-            Debug.Log($"{name}: loading {sceneToLoad}");   
+            SpawnPoint.NextId = arriveAtSpawn;
             SceneManager.LoadScene(sceneToLoad);
         }
     }
