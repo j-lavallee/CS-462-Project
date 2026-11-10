@@ -620,6 +620,128 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &230827727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.55383
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.08734
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475329830931429657, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_Name
+      value: NoticeBoard_Spot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275963064839103679, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_text
+      value: 'Hang Banner
+
+        E'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: clue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: searchedFlag
+      value: JOB1_BANNER_DONE
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: requires.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'requires.Array.data[0]'
+      value: TEAL_MET
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: There, the Story Hour banner is up!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: setsOnFirstSearch.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].text
+      value: . . . I should ask the Librarian about my clue first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[0]'
+      value: JOB1_BANNER_DONE
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[1]'
+      value: PIECE_1_REVEALED
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!1001 &290651703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1403,6 +1525,236 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   priority: 1
+--- !u!1 &945734846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 945734848}
+  - component: {fileID: 945734847}
+  - component: {fileID: 945734849}
+  m_Layer: 0
+  m_Name: LibraryStateCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &945734847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945734846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5117bea39bd3f4d9e4f862d7e6a16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LibraryStateCheck
+  rules:
+  - label: Job2
+    requires:
+    - CUSHIONS_PLACED >= 3
+    - '!JOB2_CUSHIONS_DONE'
+    sets:
+    - JOB2_CUSHIONS_DONE
+    onFired:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 945734849}
+          m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - label: Job3
+    requires:
+    - JOB1_BANNER_DONE
+    - JOB2_CUSHIONS_DONE
+    - '!JOB3_UNLOCKED'
+    sets:
+    - JOB3_UNLOCKED
+    onFired:
+      m_PersistentCalls:
+        m_Calls: []
+  - label: Ready
+    requires:
+    - JOB1_BANNER_DONE
+    - JOB2_CUSHIONS_DONE
+    - JOB3_SIGN_DONE
+    - CLUES_LIBRARY >= 3
+    - '!READY_FOR_RETURN'
+    sets:
+    - READY_FOR_RETURN
+    onFired:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!4 &945734848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945734846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.72157, y: 0.982, z: -3.12004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &945734849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945734846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076a2c971b02ee4498a4321684c6338f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger
+  lines:
+  - speaker: '*Thinking*'
+    text: The children's corner is ready for Story Hour!
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  priority: 1
+--- !u!1001 &960822231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.55383
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.08734
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475329830931429657, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_Name
+      value: Cushion1_Spot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275963064839103679, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_text
+      value: 'Arrange Cushion
+
+        E'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: clue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: searchedFlag
+      value: CUSHION_1_PLACED
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: requires.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'requires.Array.data[0]'
+      value: TEAL_MET
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: There, one cushion on the story rug.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: setsOnFirstSearch.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].text
+      value: . . . I should ask the Librarian about my clue first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[0]'
+      value: CUSHIONS_PLACED+1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[1]'
+      value: PIECE_1_REVEALED
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!4 &1118920993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
@@ -1442,6 +1794,128 @@ Transform:
   - {fileID: 499017473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1144526394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.55383
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.08734
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475329830931429657, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_Name
+      value: Cushion3_Spot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275963064839103679, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_text
+      value: 'Arrange Cushion
+
+        E'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: clue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: searchedFlag
+      value: CUSHION_3_PLACED
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: requires.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'requires.Array.data[0]'
+      value: TEAL_MET
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: There, one cushion on the story rug.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: setsOnFirstSearch.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].text
+      value: . . . I should ask the Librarian about my clue first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[0]'
+      value: CUSHIONS_PLACED+1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[1]'
+      value: PIECE_1_REVEALED
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
 --- !u!4 &1245900404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
@@ -1864,6 +2338,140 @@ PrefabInstance:
     - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
       propertyPath: 'setsOnFirstSearch.Array.data[0]'
       value: FOUNTAIN_INSPECTED
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5252346703974047714, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: e16bce84171832e45a02c038e842c326, type: 3}
+--- !u!1001 &1683725257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.55383
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.08734
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446044564535482167, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475329830931429657, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_Name
+      value: Cushion2_Spot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275963064839103679, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: m_text
+      value: 'Arrange Cushion
+
+        E'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: clue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: searchedFlag
+      value: CUSHION_2_PLACED
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: requires.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'requires.Array.data[0]'
+      value: TEAL_MET
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].text
+      value: There, one cushion on the story rug.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[1].text
+      value: 'Huh? There''s a puzzle piece under here! I better hold onto it. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: setsOnFirstSearch.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].text
+      value: . . . I should ask the Librarian about my clue first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[0]'
+      value: CUSHIONS_PLACED+1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: 'setsOnFirstSearch.Array.data[1]'
+      value: PIECE_2_REVEALED
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: lockedLines.Array.data[0].speaker
+      value: '*Thinking*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997701947782708253, guid: e16bce84171832e45a02c038e842c326, type: 3}
+      propertyPath: onFirstSearch.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3066,6 +3674,32 @@ MonoBehaviour:
     onFinished:
       m_PersistentCalls:
         m_Calls: []
+  - label: Return
+    requires:
+    - READY_FOR_RETURN
+    - '!RETURN_CONVO_DONE'
+    file: {fileID: 0}
+    lines:
+    - speaker: T
+      text: 
+    setsOnFinish:
+    - RETURN_CONVO_DONE
+    onFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - label: SignSwap
+    requires:
+    - JOB3_UNLOCKED
+    - '!JOB3_SIGN_DONE'
+    file: {fileID: 0}
+    lines:
+    - speaker: T
+      text: '[sign swap placeholder]'
+    setsOnFinish:
+    - JOB3_SIGN_DONE
+    onFinished:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!33 &7076410878925653287
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3321,3 +3955,8 @@ SceneRoots:
   - {fileID: 1554989647}
   - {fileID: 1374539880}
   - {fileID: 5762804501992364815}
+  - {fileID: 945734848}
+  - {fileID: 230827727}
+  - {fileID: 960822231}
+  - {fileID: 1683725257}
+  - {fileID: 1144526394}
