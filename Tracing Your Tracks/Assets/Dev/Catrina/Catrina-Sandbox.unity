@@ -1536,6 +1536,7 @@ GameObject:
   - component: {fileID: 945734848}
   - component: {fileID: 945734847}
   - component: {fileID: 945734849}
+  - component: {fileID: 945734850}
   m_Layer: 0
   m_Name: LibraryStateCheck
   m_TagString: Untagged
@@ -1599,6 +1600,26 @@ MonoBehaviour:
     onFired:
       m_PersistentCalls:
         m_Calls: []
+  - label: Arrival
+    requires:
+    - '!LIB_ENTERED'
+    sets:
+    - LIB_ENTERED
+    onFired:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 945734850}
+          m_TargetAssemblyTypeName: StoryPopupTrigger, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &945734848
 Transform:
   m_ObjectHideFlags: 0
@@ -1633,6 +1654,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   priority: 1
+--- !u!114 &945734850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945734846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cc2fd1237304d4b84ba0a82d888e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StoryPopupTrigger
+  title: The Library
+  body: 'You''ve arrived at the library! That treasure map you found was drawn on
+    a library book page, so you should ask the Librarian which book it came from. '
+  onClosed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &960822231
 PrefabInstance:
   m_ObjectHideFlags: 0
